@@ -22,7 +22,7 @@
 - tr ' ' '\12' < shallow1.txt | sort | uniq -c
 - tr ' ' '\12' < shallow1.txt | sort | uniq -c | sort -nr
 - tr ' ' '\12' < shallow1.txt | sort | uniq -c | sort -nr > result.txt
+- To count the total number i have used 
 - grep -i '^SHALLOW$' shallow1.txt
 - grep -i '^SIR HUGH EVANS$' shallow1.txt
-- TO count the total number i have used 
 - SIR HUGH EVANS speaks more with more words.

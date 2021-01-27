@@ -5,7 +5,7 @@
 - The Merry Wives of Windsor
 - Speaker 1 is Tejaswi Reddy Kandula
 - Speaker 2 is Devin Ingersoll
-- Who speaks more ? is the question asked to us.
+- Who speaks more SHALLOW or SIR HUGH EVANS? is the question asked to us.
 - I used the below curl commands
 - curl "http://shakespeare.mit.edu/merry_wives/full.htm"
 - curl "http://shakespeare.mit.edu/merry_wives/full.htm" -O

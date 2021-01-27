@@ -1,6 +1,6 @@
 # TK-wrangle
 ## Input data file: shallow1.txt
-## Output data file: result.txt
+## Output data file: shallow.txt and evans.txt
 ## Assigned Play:
 - The Merry Wives of Windsor
 - Speaker 1 is SHALLOW
@@ -16,13 +16,11 @@
 ```
  curl "http://shakespeare.mit.edu/merry_wives/full.htm" | sed 's/<\/*[^>]*>//g' > shallow1.txt
  ```
-- For sorting and counting :
-- tr ' ' '\12' < shallow1.txt
-- tr ' ' '\12' < shallow1.txt | sort
-- tr ' ' '\12' < shallow1.txt | sort | uniq -c
-- tr ' ' '\12' < shallow1.txt | sort | uniq -c | sort -nr
-- tr ' ' '\12' < shallow1.txt | sort | uniq -c | sort -nr > result.txt
 - To count the total number of Speakers:
-- grep -i '^SHALLOW$' shallow1.txt
-- grep -i '^SIR HUGH EVANS$' shallow1.txt
+- Speaker 1:grep '^SHALLOW' 'shallow1.txt' -c
+- Speaker 2:grep '^SIR HUGH EVANS' 'shallow1.txt'-c
+- To transfer total count of SHALLOW to the output file:
+-  grep '^SHALLOW' 'shallow1.txt' -c > shallow.txt
+- To transfer total count of SIR HUGH EVANS to the output file:
+- grep '^SIR HUGH EVANS' 'shallow1.txt' -c > evans.txt
 - SIR HUGH EVANS speaks more with more words.
